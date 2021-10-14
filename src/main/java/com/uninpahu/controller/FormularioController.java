@@ -35,8 +35,11 @@ public class FormularioController {
 	}
 	
 	@PostMapping
-	public Formulario agregar(Formulario formulario) {
-		return formularioService.agregarOActualizar(formulario);
+	public Formulario agregar(@RequestBody Formulario formulario) {
+		System.out.print("Esto llega  aoellidos "+ formulario.getApellidos());
+		Formulario formResult =  formularioService.agregarOActualizar(formulario);
+		System.out.print("formresult aoellidos "+ formResult.getApellidos());
+		return formResult;
 	}
 	
 	@PutMapping("/{id}")

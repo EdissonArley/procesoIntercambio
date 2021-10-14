@@ -30,7 +30,7 @@ public class Formulario implements Serializable {
 	private String nombreCompleto;
 	private String apellidos;
 	private String nacionalidad;
-	private String documentoIdentificacion;
+	private String documentoIdentificacion;		
 	private Date fechaNacimiento;
 	private String sexo;
 	private String tipoSangre;
@@ -40,7 +40,7 @@ public class Formulario implements Serializable {
 	private String estadoCivil;
 	private String numeroPasaporte;
 	private String celular;
-	private String numeroEmergencia;
+	private String nombreAcudiente;
 	private String telefonoAcudiente;
 	private String parentesco;
 	private String facultad;
